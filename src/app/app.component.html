@@ -1,0 +1,38 @@
+<div style="width:800px; margin:0 auto;">
+  <form [formGroup]="filtersForm" (ngSubmit)="submitForm()" ngxsForm="form.details">
+    <mat-card>
+      <mat-card-header>
+          <mat-card-title>NGXS form sync with a store demo</mat-card-title>
+          <mat-card-subtitle><a href="https://ngxs.gitbook.io/ngxs/plugins/forms" target="_blank">https://ngxs.gitbook.io/ngxs/plugins/forms</a></mat-card-subtitle>
+        <mat-panel-description>
+
+        </mat-panel-description>
+      </mat-card-header>
+
+      <div>
+        <mat-form-field>
+          <input matInput placeholder="Text" formControlName="text">
+        </mat-form-field>
+      </div>
+      <div>
+        <mat-form-field>
+          <input matInput [matDatepicker]="datePicker" placeholder="Choose a date" formControlName="date">
+          <mat-datepicker-toggle matSuffix [for]="datePicker"></mat-datepicker-toggle>
+          <mat-datepicker #datePicker></mat-datepicker>
+        </mat-form-field>
+      </div>
+      <div>
+        <mat-form-field>
+          <mat-select placeholder="Select Option" formControlName="select" multiple>
+            <mat-option *ngFor="let option of options" [value]="option.id">
+              {{ option.name }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <mat-action-row>
+          <button mat-raised-button type="submit">Submit</button>
+      </mat-action-row>
+    </mat-card>
+  </form>
+</div>
