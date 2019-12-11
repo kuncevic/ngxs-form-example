@@ -1,8 +1,10 @@
-<div style="width:800px; margin:0 auto;">
+<div class="container">
   <form [formGroup]="filtersForm" (ngSubmit)="submitForm()" ngxsForm="form.details">
-    <mat-card>
+    <mat-card >
       <mat-card-header>
-          <mat-card-title>NGXS form sync with a store demo</mat-card-title>
+          <mat-card-title>
+            <h2>NGXS form sync with a store demo 🚀</h2>
+          </mat-card-title>
           <mat-card-subtitle>
           </mat-card-subtitle>
         <mat-panel-description>
@@ -31,13 +33,13 @@
           </mat-select>
         </mat-form-field>
       </div>
-      <mat-action-row>
+      <mat-card-actions align="end">
           <button mat-raised-button type="submit">Submit</button>
-      </mat-action-row>
+      </mat-card-actions>
     </mat-card>
   </form>
-  <div style="text-align: center;padding-top: 10px;" >
+  <div class="hello" >
        <h3>Build with ❤️ by <a href="https://linkedin.com/in/kuncevic" target="_blank">Aliaksei Kuncevič</a> </h3>
-       <h3>Follow <a href="https://twitter.com/kuncevic" target="_blank">https://twitter.com/kuncevic</a> </h3>
+       <h3>Follow me <a href="https://twitter.com/kuncevic" target="_blank">https://twitter.com/kuncevic</a> 🤓</h3>
   </div>
 </div>
