@@ -1,8 +1,6 @@
-# Ngxs Forms Demo
+# NgxsFormExample
 
-More details on [ngxs form-plugin](https://ngxs.gitbook.io/ngxs/plugins/forms)
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.1.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.0-rc.5.
 
 ## Development server
 

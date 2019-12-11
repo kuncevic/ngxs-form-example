@@ -1,3 +1,4 @@
+import { Injectable } from '@angular/core';
 import { State, Selector, Store } from '@ngxs/store';
 
 @State({
@@ -11,6 +12,7 @@ import { State, Selector, Store } from '@ngxs/store';
     }
   }
 })
+@Injectable()
 export class FormState {
   constructor(private store: Store) {}
 

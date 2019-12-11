@@ -3,7 +3,6 @@ import { Store, Select } from '@ngxs/store';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Observable } from 'rxjs';
 import { FormState } from './app.state';
-import { MatSelect, MatSlideToggle, MatOption } from '@angular/material';
 import { ElementSchemaRegistry } from '@angular/compiler';
 
 @Component({
