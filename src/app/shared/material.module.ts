@@ -1,11 +1,12 @@
 import { CommonModule } from '@angular/common';
-import { NgModule } from '@angular/core';
+import { ModuleWithProviders, NgModule } from '@angular/core';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatButtonModule } from '@angular/material/button';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatNativeDateModule } from '@angular/material/core';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatExpansionModule } from '@angular/material/expansion';
@@ -26,7 +27,6 @@ import { MatTableModule } from '@angular/material/table';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import { MatNativeDateModule } from '@angular/material/core';
 
 @NgModule({
   imports: [
@@ -91,10 +91,10 @@ import { MatNativeDateModule } from '@angular/material/core';
   ]
 })
 export class MaterialModule {
-  static forRoot() {
+  static forRoot(): ModuleWithProviders<MaterialModule> {
     return {
-      ngModule: MaterialModule,
-      providers: [MatIconRegistry]
+        ngModule: MaterialModule,
+        providers: [MatIconRegistry]
     };
-  }
+}
 }
