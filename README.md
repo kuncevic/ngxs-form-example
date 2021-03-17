@@ -1,7 +1,7 @@
 # NGXS Forms Example
 
 ### More about NGXS
-📙 [NGXS Docks](http://ngxs.io)  
+📙 [NGXS Docs](http://ngxs.io)  
 🧪 [NGXS Labs](http://ngxs-labs.github.io)  
 😎 [Other Links](https://github.com/ngxs/store#quick-links)    
 
